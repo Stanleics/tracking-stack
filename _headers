@@ -1,0 +1,17 @@
+/assets/css/*
+  Cache-Control: public, max-age=604800
+
+/assets/js/*
+  Cache-Control: public, max-age=604800
+
+/assets/favicon/*
+  Cache-Control: public, max-age=2592000
+
+/fotos/*
+  Cache-Control: public, max-age=2592000
+
+/logomarca/*
+  Cache-Control: public, max-age=2592000
+
+/logomarcaclientes/*
+  Cache-Control: public, max-age=2592000

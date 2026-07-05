@@ -116,7 +116,7 @@
 
       <!-- Logo -->
       <a href="#" aria-label="Astec — página inicial" class="flex-shrink-0">
-        <img src="logomarca/logo_Astec.png" alt="Astec Indústria" class="h-9 md:h-11 w-auto" fetchpriority="high">
+        <img src="logomarca/logo_Astec.png" alt="Astec Indústria" class="h-9 md:h-11 w-auto" width="936" height="397" fetchpriority="high">
       </a>
 
       <!-- Desktop links -->
@@ -238,7 +238,7 @@
 
           <!-- Logo header bar -->
           <div class="glass rounded-2xl px-5 py-3.5 mb-3 flex items-center gap-4">
-            <img src="logomarca/logo_Astec.png" alt="Astec Indústria" class="h-8 w-auto brightness-0 invert" loading="eager">
+            <img src="logomarca/logo_Astec.png" alt="Astec Indústria" class="h-8 w-auto brightness-0 invert" width="936" height="397" loading="eager">
             <div class="w-px h-5 bg-white/25 flex-shrink-0"></div>
             <span class="text-white/80 text-sm font-semibold">Desde 1995</span>
             <div class="ml-auto flex gap-2">
@@ -250,11 +250,15 @@
           <!-- Photo card -->
           <div class="rounded-3xl overflow-hidden shadow-2xl" style="border:1px solid rgba(255,255,255,0.15)">
             <div class="relative">
-              <img src="fotos/Retrofit.jpeg"
-                   alt="Ponte rolante industrial da Astec Indústria"
-                   class="w-full object-cover"
-                   style="height:380px;object-position:center;"
-                   loading="eager">
+              <picture>
+                <source srcset="fotos/Retrofit.webp" type="image/webp">
+                <img src="fotos/Retrofit.jpeg"
+                     alt="Ponte rolante industrial da Astec Indústria"
+                     class="w-full object-cover"
+                     style="height:380px;object-position:center;"
+                     width="768" height="1024"
+                     loading="eager">
+              </picture>
               <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(0,24,60,0.92) 0%,rgba(0,24,60,0.25) 50%,transparent 100%)"></div>
               <div class="absolute bottom-0 left-0 right-0 p-6">
                 <div class="flex items-end justify-between mb-3">
@@ -305,9 +309,13 @@
 
       <!-- 01 — Parque Fabril (featured: tall left, spans 2 rows) -->
       <article class="project-item project-item--featured" role="listitem">
-        <img src="fotos/Parque_Fabril.jpeg"
-             alt="Pontes rolantes Astec no parque fabril próprio em Canoas RS"
-             loading="lazy">
+        <picture>
+          <source srcset="fotos/Parque_Fabril.webp" type="image/webp">
+          <img src="fotos/Parque_Fabril.jpeg"
+               alt="Pontes rolantes Astec no parque fabril próprio em Canoas RS"
+               width="1024" height="768"
+               loading="lazy">
+        </picture>
         <div class="project-overlay" aria-hidden="true">
           <span class="project-num">01</span>
           <div>
@@ -319,9 +327,13 @@
 
       <!-- 02 — Pórtico em Operação (top right) -->
       <article class="project-item" role="listitem">
-        <img src="fotos/portico-em-operacao.jpeg"
-             alt="Pórtico industrial amarelo instalado e em operação em armazém"
-             loading="lazy">
+        <picture>
+          <source srcset="fotos/portico-em-operacao.webp" type="image/webp">
+          <img src="fotos/portico-em-operacao.jpeg"
+               alt="Pórtico industrial amarelo instalado e em operação em armazém"
+               width="675" height="900"
+               loading="lazy">
+        </picture>
         <div class="project-overlay" aria-hidden="true">
           <span class="project-num">02</span>
           <div>
@@ -333,9 +345,13 @@
 
       <!-- 03 — Fabricação de Estruturas (top right 2) -->
       <article class="project-item" role="listitem">
-        <img src="fotos/Fabricacao_Pontes_Rolantes.jpeg"
-             alt="Vigas e estruturas metálicas de ponte rolante em processo de fabricação"
-             loading="lazy">
+        <picture>
+          <source srcset="fotos/Fabricacao_Pontes_Rolantes.webp" type="image/webp">
+          <img src="fotos/Fabricacao_Pontes_Rolantes.jpeg"
+               alt="Vigas e estruturas metálicas de ponte rolante em processo de fabricação"
+               width="625" height="833"
+               loading="lazy">
+        </picture>
         <div class="project-overlay" aria-hidden="true">
           <span class="project-num">03</span>
           <div>
@@ -347,9 +363,13 @@
 
       <!-- 04 — Instalação em Planta (bottom wide, spans 2 cols) -->
       <article class="project-item project-item--wide" role="listitem">
-        <img src="fotos/Montagem_Desmontagem_Equipamentos (1).jpeg"
-             alt="Equipe Astec realizando montagem de ponte rolante em planta industrial moderna"
-             loading="lazy">
+        <picture>
+          <source srcset="fotos/Montagem_Desmontagem_Equipamentos (1).webp" type="image/webp">
+          <img src="fotos/Montagem_Desmontagem_Equipamentos (1).jpeg"
+               alt="Equipe Astec realizando montagem de ponte rolante em planta industrial moderna"
+               width="1024" height="768"
+               loading="lazy">
+        </picture>
         <div class="project-overlay" aria-hidden="true">
           <span class="project-num">04</span>
           <div>
@@ -428,9 +448,12 @@
 
       <!-- Corretiva -->
       <div class="service-card rounded-3xl overflow-hidden reveal reveal-delay-2" style="min-height:360px; position:relative;">
-        <img src="fotos/portico-em-operacao.jpeg"
-             alt="Técnico Astec realizando manutenção corretiva em ponte rolante"
-             class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+        <picture>
+          <source srcset="fotos/portico-em-operacao.webp" type="image/webp">
+          <img src="fotos/portico-em-operacao.jpeg"
+               alt="Técnico Astec realizando manutenção corretiva em ponte rolante"
+               class="absolute inset-0 w-full h-full object-cover" width="675" height="900" loading="lazy">
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-astec-dark/90 via-astec-dark/40 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
           <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4">
@@ -448,9 +471,12 @@
 
       <!-- Retrofit -->
       <div class="service-card rounded-3xl overflow-hidden reveal reveal-delay-3" style="min-height:360px; position:relative;">
-        <img src="fotos/Montagem_Desmontagem_Equipamentos%20(1).jpeg"
-             alt="Modernização e retrofit de ponte rolante pela Astec"
-             class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+        <picture>
+          <source srcset="fotos/Montagem_Desmontagem_Equipamentos%20(1).webp" type="image/webp">
+          <img src="fotos/Montagem_Desmontagem_Equipamentos%20(1).jpeg"
+               alt="Modernização e retrofit de ponte rolante pela Astec"
+               class="absolute inset-0 w-full h-full object-cover" width="1024" height="768" loading="lazy">
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-astec-blue-dark/90 via-astec-blue-dark/40 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
           <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4">
@@ -662,22 +688,22 @@
     <!-- Client logos -->
     <div class="flex flex-wrap items-center justify-center gap-6 mb-4 reveal" aria-label="Clientes Astec">
       <div class="client-logo-item">
-        <img src="logomarcaclientes/LogoAdama.png" alt="Adama" class="h-10 w-auto object-contain" loading="lazy">
+        <img src="logomarcaclientes/LogoAdama.png" alt="Adama" class="h-10 w-auto object-contain" width="2052" height="771" loading="lazy">
       </div>
       <div class="client-logo-item">
-        <img src="logomarcaclientes/LogoDUPONT.png" alt="DuPont" class="h-10 w-auto object-contain" loading="lazy">
+        <img src="logomarcaclientes/LogoDUPONT.png" alt="DuPont" class="h-10 w-auto object-contain" width="360" height="360" loading="lazy">
       </div>
       <div class="client-logo-item">
-        <img src="logomarcaclientes/logo-perto.png" alt="Perto" class="h-10 w-auto object-contain" loading="lazy">
+        <img src="logomarcaclientes/logo-perto.png" alt="Perto" class="h-10 w-auto object-contain" width="83" height="28" loading="lazy">
       </div>
       <div class="client-logo-item">
-        <img src="logomarcaclientes/logoCSN.png" alt="CSN" class="h-10 w-auto object-contain" loading="lazy">
+        <img src="logomarcaclientes/logoCSN.png" alt="CSN" class="h-10 w-auto object-contain" width="2048" height="2048" loading="lazy">
       </div>
       <div class="client-logo-item">
-        <img src="logomarcaclientes/logoGEDORE.png" alt="Gedore" class="h-10 w-auto object-contain" loading="lazy">
+        <img src="logomarcaclientes/logoGEDORE.png" alt="Gedore" class="h-10 w-auto object-contain" width="509" height="99" loading="lazy">
       </div>
       <div class="client-logo-item">
-        <img src="logomarcaclientes/logoMinuano.png" alt="Minuano" class="h-10 w-auto object-contain" loading="lazy">
+        <img src="logomarcaclientes/logoMinuano.png" alt="Minuano" class="h-10 w-auto object-contain" width="3062" height="1999" loading="lazy">
       </div>
     </div>
 
@@ -876,7 +902,7 @@
 
       <!-- Brand -->
       <div class="lg:col-span-1">
-        <img src="logomarca/logo_Astec.png" alt="Astec Indústria" class="h-10 w-auto mb-4 brightness-0 invert" loading="lazy">
+        <img src="logomarca/logo_Astec.png" alt="Astec Indústria" class="h-10 w-auto mb-4 brightness-0 invert" width="936" height="397" loading="lazy">
         <p class="text-slate-400 text-sm leading-relaxed">
           Desde 1995, sem deixar sua produção parar. Especialistas em pontes rolantes, pórticos e movimentação de carga no Rio Grande do Sul.
         </p>
