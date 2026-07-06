@@ -40,18 +40,36 @@ document.addEventListener('click', e => {
   }
 });
 
-// ── Smooth scroll for anchor links ──────────────────────────
+// ── Smooth scroll for anchor links (atualiza a URL pro #hash,
+//    pra poder usar essas URLs como sitelinks no Google Ads) ───
+const NAV_OFFSET = 80;
+
+function scrollToHash(hash, behavior) {
+  const target = document.querySelector(hash);
+  if (!target) return false;
+  const top = target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+  window.scrollTo({ top, behavior: behavior || 'smooth' });
+  return true;
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href');
     if (!href || href === '#') return;
-    const target = document.querySelector(href);
-    if (!target) return;
+    if (!scrollToHash(href)) return;
     e.preventDefault();
-    const top = target.getBoundingClientRect().top + window.scrollY - 80;
-    window.scrollTo({ top, behavior: 'smooth' });
+    history.pushState(null, '', href);
   });
 });
+
+// Chegou direto numa URL com #hash (ex: clique num sitelink do Google
+// Ads)? Corrige a posição considerando a navbar fixa — o navegador já
+// pulou pro alvo sem esse desconto antes do nosso JS rodar.
+if (window.location.hash) {
+  document.addEventListener('DOMContentLoaded', () => {
+    scrollToHash(window.location.hash, 'auto');
+  });
+}
 
 // ── Scroll reveal (IntersectionObserver) ────────────────────
 const revealObserver = new IntersectionObserver((entries) => {
